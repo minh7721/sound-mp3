@@ -170,13 +170,13 @@ const app = {
         }
          //Nút next bài
          btnNext.onclick = function() {
-            app.nextSong;
+            app.nextSong();
             audio.play();
             console.log(app.currentIndex);
         }
         //Nút lùi bài
            btnPrev.onclick = function() {
-            app.prevSong;
+            app.prevSong();
             audio.play();
         }
     },
