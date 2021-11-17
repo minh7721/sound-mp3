@@ -108,7 +108,7 @@ const app = {
             get: function () {
                 return this.songs[this.currentIndex]
             }
-        })
+        });
     },
 
     handleEvents: function () {
@@ -172,9 +172,10 @@ const app = {
          btnNext.onclick = function() {
             app.nextSong;
             audio.play();
+            console.log(app.currentIndex);
         }
         //Nút lùi bài
-        btnPrev.onclick = function() {
+           btnPrev.onclick = function() {
             app.prevSong;
             audio.play();
         }
@@ -186,12 +187,11 @@ const app = {
         // console.log(heading, cdThumb, audio);
     },
     nextSong: function() {
-        this.currentIndex++
+        this.currentIndex++;
         if (this.currentIndex >= this.songs.length) {
             this.currentIndex = 0
         }
-        console.log(this.currentIndex);
-        this.playCurrentSong()
+        this.playCurrentSong();
     },
     prevSong: function() {
         this.currentIndex--
@@ -201,17 +201,19 @@ const app = {
         this.playCurrentSong()
     },
     start: function () {
+
         //Thuộc tính
         this.definedProperties();
 
         //Bắt sự kiện
         this.handleEvents();
+        
+        //Tải bài hát đầu tiên
+        this.playCurrentSong();
 
         //Render playlist
         this.render();
 
-        //Tải bài hát đầu tiên
-        this.playCurrentSong();
     },
 };
 
