@@ -37,8 +37,8 @@ const app = {
         },
         {
             name: "Ánh sao và bầu trời",
-            singer: "",
-            linkSound: "./sound/",
+            singer: "T.R.I",
+            linkSound: "./sound/AnhSaoVaBauTroi.mp3",
             linkImg: "./img/avatar.jpg",
         },
         {
@@ -49,8 +49,8 @@ const app = {
         },
         {
             name: "Chỉ là muốn nói",
-            singer: "MinhHNMinhHN",
-            linkSound: "./sound/",
+            singer: "MinhHN",
+            linkSound: "./sound/ChiLaMuonNoi.mp3",
             linkImg: "./img/avatar.jpg",
         },
         {
